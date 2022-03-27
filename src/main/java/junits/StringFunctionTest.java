@@ -1,18 +1,17 @@
 package junits;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StringFunctionTest {
 
-	@Test
+	@CustomAnnotationForPositiveCases
 	public void test1() {
 		assertTrue(StringFunctions.isPalindrome("racecaR"));
 		assertTrue(StringFunctions.isPalindrome("RADAR"));
 	}
 
-	
-	@Test
+	@CustomAnnotationForNegativeCases
 	public void test2() {
 
 		assertFalse(StringFunctions.isPalindrome("SHAH"));

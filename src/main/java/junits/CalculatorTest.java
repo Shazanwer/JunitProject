@@ -3,11 +3,12 @@ package junits;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 	
-	
+	@DisplayName("Positive Test")
 	@Test
 	public void addTest1() {
 		
